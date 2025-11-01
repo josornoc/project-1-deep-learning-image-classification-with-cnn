@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Image Classifier</title>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+                display: grid;
+                place-items: center;
+                min-height: 90vh;
+                background-color: #f4f7f6;
+                color: #333;
+            }
+            .container {
+                background: #ffffff;
+                padding: 2rem 3rem;
+                border-radius: 12px;
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+                text-align: center;
+            }
+            h1 {
+                color: #2c3e50;
+                margin-bottom: 0.5rem;
+            }
+            p {
+                color: #434444;
+                margin-top: 0;
+                font-size: 1.0rem;
+            }
+            form {
+                margin-top: 2.5rem;
+            }
+            input[type="text"] {
+                width: 90%;
+                padding: 0.8rem;
+                font-size: 1rem;
+                border: 2px solid #ddd;
+                border-radius: 6px;
+                transition: border-color 0.3s;
+            }
+            input[type="text"]:focus {
+                border-color: #3498db;
+                outline: none;
+            }
+            button {
+                margin-top: 1.5rem;
+                padding: 0.8rem 1.5rem;
+                font-size: 1rem;
+                font-weight: bold;
+                color: #fff;
+                background-color: #3498db;
+                border: none;
+                border-radius: 6px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+            button:hover {
+                background-color: #2980b9;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>CIFAR-10 Image Classifier</h1>
+            
+            <h2 style="text-align: left;">Important remarks:</h2>
+            
+            <p style="text-align: left;">- The image should have 1 and preferably just 1 of the following objects:</p>
+            
+            <ul style="text-align: left;">
+                <li>airplane</li> 
+                <li>automobile</li> 
+                <li>bird</li> 
+                <li>cat</li> 
+                <li>deer</li> 
+                <li>dog</li> 
+                <li>frog</li> 
+                <li>horse</li> 
+                <li>ship</li> 
+                <li>truck</li> 
+            </ul>
+
+            <p style="text-align: left;">- Bear in mind that the image will be processed and turned into a small thumbnail (32x32),<br>
+            so, don't upload wallpapers please.</p>
+            
+            <form action="/predict_url" method="POST">
+                <h3>Enter an image URL to get a prediction.</h3>
+                <label for="url_input" style="display:none;">Image URL</label>
+                <input type="text" id="url_input" name="url" placeholder="Paste your image URL here..." required>
+                <br>
+                <button type="submit">Predict</button>
+            </form>
+        </div>
+        <small>By Jose Osorno with help of several, resourceful and sweet IA clients.</small>
+    </body>
+</html>
