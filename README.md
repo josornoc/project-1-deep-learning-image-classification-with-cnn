@@ -4,7 +4,13 @@
 
 ## Project deployed [here](https://my-cifar-app-547606375183.europe-southwest1.run.app/)
 
+<<<<<<< Updated upstream
 ## Dataset
+=======
+## Presentation [here](https://docs.google.com/presentation/d/1Way9za65uk9AcZXkssiKZBVm-AvR3zJDGAMexs4CqCA/edit?usp=sharing)
+
+## Datasets (pick one!)
+>>>>>>> Stashed changes
 
 1. The dataset for this task is the CIFAR-10 dataset, which consists of 60,000 32x32 color images in 10 classes, with 6,000 images per class. You can download the dataset from [here](https://www.cs.toronto.edu/~kriz/cifar.html).
 
